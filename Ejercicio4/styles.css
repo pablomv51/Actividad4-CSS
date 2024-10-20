@@ -1,0 +1,334 @@
+/*General*/
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-image: url("img/paven.png");
+}
+
+a{
+    color: #529125;
+}
+a:hover{
+    color: #285616;
+}
+
+
+/*Cabecera*/
+
+header{
+    width: 100%;
+}
+
+#logotipo{
+    text-align: center;
+}
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    width: 140px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #70b231;
+    text-shadow: 0px 2px 4px #333333;
+}
+
+
+/*Menu*/
+
+nav{
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    box-shadow: 0px 0px 2px grey;
+    margin-top: 20px;
+}
+
+nav ul{
+    width: 1130px;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav ul li{
+    float: left;
+    line-height: 40px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+
+}
+
+nav ul li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px grey inset;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    padding: 0 10px;
+}
+
+/* Principal*/
+
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    text-align: center;
+}
+
+#aside{
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    margin-top: 2%;
+    float: left;
+    margin-left: 20%;
+}
+
+#aside .widget{
+width: 180px;
+margin: 0 auto;
+}
+
+form input[type="submit"]{
+    background-color: #70b231;   
+    border-radius: 5px;
+    color: white;
+    width: 70px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+#aula1{
+    border-top: black dashed 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#login{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h3{
+    background-color: #f0f0f0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+#interes{
+    font-size: 17px;
+}
+
+#aula2{
+    border-top: black dashed 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#enlaces{
+    
+        border-top: black dashed 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+a.texto {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+/* Secciones */
+
+#sections{
+    float: right;
+    width: 75%;
+    margin-right: -15%;
+}
+
+#sections section{
+margin-top: 40px;
+background-color: white;
+box-shadow: 0px 0px 4px #c9c9c9;
+}
+
+#sections section p{
+ text-align: justify;
+ padding: 12px;
+}
+
+img.stickerOne{
+    margin-right: 85%;
+    transform: translateY(-15px); /* Se que no lo hemos dado en clase, pero no encontraba otra manera,
+                                 entonces me informe en Internet para poder mover imagenes sin afectar 
+                                 al flujo en el que se encuentre y encontre este parámetro, que en este
+                                  caso me interesa moverlo en el eje Y(vertical).*/
+}
+img.stickerTwo{
+    transform: translateY(-15px);
+}
+
+h2.titulo{
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+
+
+/* Pie de página*/
+
+footer{
+    margin-top: 35%;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    box-shadow: 0px 0px 2px gray;
+    text-align: center;
+}
+
+
+
+/*Estilos*/
+
+@media (max-width: 1800px){
+    a{
+        color: red;
+    }
+    a:hover{
+        color: darkred;
+    }
+    h1{
+        color: red;
+        text-shadow: 0px 2px 4px violet;
+    }
+    nav{
+        
+        background-color: #790f55;
+        box-shadow: 0px 0px 2px rgb(3, 2, 2);
+    }
+    nav ul li:hover{
+        background-color: #1250c2;
+        box-shadow: 0px 0px 4px rgb(57, 57, 95);
+    }
+    nav ul li a{
+        color: orange;
+    }
+    #aside{
+        box-shadow: red;
+        background-color: wheat;
+        border: 1px solid red;
+    }
+    form input[type="submit"]{
+        background-color: red;   
+        color: wheat;
+    }
+    h3{
+        background-color: lightyellow;
+        border-top: 1px solid lightgreen;
+        border-bottom: 1px solid lightgreen;
+        
+    }
+    #sections section{
+        background-color: wheat;
+        box-shadow: 0px 0px 4px red;
+        }
+    h2.titulo{
+        border-bottom: 1px solid red;
+    }
+    footer{
+        background-color: wheat;
+        color: black;
+    }
+    form input[type="text"]{
+        background-color: lightyellow;   
+        color: black;
+    }
+
+    form input[type="password"]{
+        background-color: lightyellow;   
+        color: black;
+    }
+}
+
+
+
+
+@media (max-width: 1600px){
+    a{
+        color: lightcoral;
+    }
+    a:hover{
+        color:lightblue;
+    }
+    h1{
+        color: lightblueq;
+        text-shadow: 0px 2px 4px violet;
+    }
+    nav{
+        
+        background-color: blueviolet;
+        box-shadow: 0px 0px 2px rgb(3, 2, 2);
+    }
+    nav ul li:hover{
+        background-color: blueviolet;
+        box-shadow: 0px 0px 4px rgb(57, 57, 95);
+    }
+    nav ul li a{
+        color: rgb(255, 0, 119);
+    }
+    #aside{
+        box-shadow: blue;
+        background-color: lightblue;
+        border: 1px solid blue;
+    }
+    form input[type="submit"]{
+        background-color: lightcoral;   
+        color: lightblue;
+    }
+    h3{
+        background-color: lightcoral;
+        border-top: 1px solid lightblue;
+        border-bottom: 1px solid lightblue;
+        
+    }
+    #sections section{
+        background-color: lightblue;
+        box-shadow: 0px 0px 4px blue;
+        }
+    h2.titulo{
+        border-bottom: 1px solid blue;
+    }
+    footer{
+        background-color: lightblue;
+        color: black;
+    }
+    form input[type="text"]{
+        background-color: lightblue;   
+        color: black;
+    }
+
+    form input[type="password"]{
+        background-color: lightblue;   
+        color: black;
+    }
+}
